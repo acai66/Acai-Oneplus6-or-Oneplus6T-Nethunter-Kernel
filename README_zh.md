@@ -54,7 +54,7 @@
     ![开启监听模式](resources/images/enable_monitor_mode.jpg)
 
 ### 致谢
-    - [simonpunk](https://forum.xda-developers.com/oneplus-5/development/burgerhunter-t3638810)、[johanlike(DJY)](https://github.com/johanlike) for HID补丁和wifi补丁
-    - [Boos4721](https://github.com/Boos4721/op6_kernel)的内核源码
-    - [osm0sis](https://github.com/osm0sis/AnyKernel3)的AntKernel3
+- [simonpunk](https://forum.xda-developers.com/oneplus-5/development/burgerhunter-t3638810)、[johanlike(DJY)](https://github.com/johanlike) for HID补丁和wifi补丁
+- [Boos4721](https://github.com/Boos4721/op6_kernel)的内核源码
+- [osm0sis](https://github.com/osm0sis/AnyKernel3)的AntKernel3
 
