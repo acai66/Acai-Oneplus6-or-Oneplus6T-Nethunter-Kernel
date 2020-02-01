@@ -1,11 +1,11 @@
 # Acai-Oneplus6-or-Oneplus6T-Nethunter-kernel
 [README](README.md) | [中文文档](README_zh.md)
 
-适用于一加6的Nethunter内核
+适用于一加6的Nethunter内核，[源码](https://github.com/acai66/op6_kernel)
 
 ## 内核信息
-- 版本: V1
-- 内核版本: 4.9.212
+- 版本: V2
+- 内核版本: 4.9.213
 - 支持系统: 氢安卓10，理论也支持氧10
 - 编译链: Clang11
 
@@ -16,7 +16,9 @@
 2. 帧注入补丁
 3. 添加部分usb网卡驱动
 4. rtl8812au驱动 (5Ghz wifi)
-5. 以及其他可能正常工作的设备驱动，(例如Hackrf、usb蓝牙) 
+5. 4. rtl8188eu驱动(未测试)
+6. WireGuard
+7. 以及其他可能正常工作的设备驱动，(例如RTL-SDR、Hackrf、usb蓝牙) 
 
 ### Bugs
 1. 开机会弹窗 "您的设备内部出现了问题",直接忽略就好
