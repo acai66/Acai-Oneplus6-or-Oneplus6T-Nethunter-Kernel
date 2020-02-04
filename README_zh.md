@@ -4,7 +4,7 @@
 适用于一加6(T)的Nethunter内核，[源码](https://github.com/acai66/op6_kernel)
 
 ## 内核信息
-- 版本: V2
+- 版本: V3
 - 内核版本: 4.9.213-rc1
 - 支持系统: 氢安卓10，理论也支持氧10
 - 编译链: Clang11
@@ -19,7 +19,10 @@
 5. rtl8188eu驱动(未测试)
 6. WireGuard
 7. PostgreSQL
-8. 以及其他可能正常工作的设备驱动，(例如RTL-SDR、Hackrf、usb蓝牙) 
+8. 支持nfs网络文件系统
+9. USB rndis
+10. Patch system systemlessly
+11. 以及其他可能正常工作的设备驱动，(例如RTL-SDR、Hackrf、usb蓝牙) 
 
 
 ### Bugs
