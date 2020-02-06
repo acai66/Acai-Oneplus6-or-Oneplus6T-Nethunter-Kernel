@@ -4,25 +4,29 @@
 适用于一加6(T)的Nethunter内核，[源码](https://github.com/acai66/op6_kernel)
 
 ## 内核信息
-- 版本: V3
-- 内核版本: 4.9.213-rc1
+- 版本: V4
+- 内核版本: 4.9.213
 - 支持系统: 氢安卓10，理论也支持氧10
 - 编译链: Clang11
 
 ![内核版本](resources/images/version.jpg)
 
 ### 当前已完成功能
-1. HID补丁
-2. 帧注入补丁
-3. 添加部分usb网卡驱动
-4. rtl8812au驱动 (5Ghz wifi)
+1. HID补丁 (已测试)
+2. 帧注入补丁 (已测试)
+3. 添加部分usb网卡驱动 (已测试)
+4. rtl8812au驱动 (5Ghz wifi)(已测试)
 5. rtl8188eu驱动(未测试)
-6. WireGuard
-7. PostgreSQL
-8. 支持nfs网络文件系统
-9. USB rndis
-10. Patch system systemlessly
-11. 以及其他可能正常工作的设备驱动，(例如RTL-SDR、Hackrf、usb蓝牙) 
+6. WireGuard (已测试)
+7. PostgreSQL (已测试)
+8. 支持nfs网络文件系统 (已测试)
+9. USB rndis (已测试)
+10. Amateur radio support
+11. CAN bus support
+12. IrDA(infrared) support
+13. USB Serial Converter support
+14. Patch system systemlessly (已测试)
+15. 以及其他可能正常工作的设备驱动，(例如RTL-SDR、Hackrf、usb蓝牙) 
 
 
 ### Bugs
@@ -59,8 +63,10 @@
 
     ![开启监听模式](resources/images/enable_monitor_mode.jpg)
 
-### 致谢
-- [simonpunk](https://forum.xda-developers.com/oneplus-5/development/burgerhunter-t3638810)、[johanlike(DJY)](https://github.com/johanlike) for HID补丁和wifi补丁
-- [Boos4721](https://github.com/Boos4721/op6_kernel)的内核源码
-- [osm0sis](https://github.com/osm0sis/AnyKernel3)的AnyKernel3
+### Credits
+- [simonpunk](https://forum.xda-developers.com/oneplus-5/development/burgerhunter-t3638810) for HID patches
+- [johanlike(DJY)](https://github.com/johanlike) for wifi patches
+- [Boos4721](https://github.com/Boos4721/op6_kernel) for kernel source 
+- [osm0sis](https://github.com/osm0sis/AnyKernel3) for AnyKernel3
+- [kimocoder](https://github.com/kimocoder) for help
 
