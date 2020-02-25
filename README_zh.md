@@ -1,11 +1,11 @@
 # Acai-Oneplus6-or-Oneplus6T-Nethunter-kernel
 [README](README.md) | [中文文档](README_zh.md)
 
-适用于一加6(T)的Nethunter内核，[源码](https://github.com/acai66/op6_kernel)
+适用于一加6(T)的Nethunter内核，[源码](https://github.com/acai66/op6-op6t-nethunter-kernel)
 
 ## 内核信息
-- 版本: V4
-- 内核版本: 4.9.213
+- 版本: V5
+- 内核版本: 4.9.215-rc
 - 支持系统: 氢安卓10，理论也支持氧10
 - 编译链: Clang11
 
@@ -56,9 +56,9 @@
 7. #### 如何切换网卡到监听模式？
     在测试`rtl8812au`时，使用`airmon-ng start wlan1`打开监听模式总是有异常，经过搜索测试发现运行如下命令即可打开监听模式
     ```
-    ifconfig wlan1 down
-    iwconfig wlan1 mode monitor
-    ifconfig wlan1 up
+    ip link wlan1 down
+    iw dev wlan1 set type monitor
+    ip link wlan1 up
     ```
 
     ![开启监听模式](resources/images/enable_monitor_mode.jpg)

@@ -1,11 +1,11 @@
 # Acai-Oneplus6-or-Oneplus6T-Nethunter-kernel
 [README](README.md) | [中文文档](README_zh.md)
 
-Nethunter Kernel for Oneplus 6 and Oneplus 6T, [Source Code](https://github.com/acai66/op6_kernel)
+Nethunter Kernel for Oneplus 6 and Oneplus 6T, [Source Code](https://github.com/acai66/op6-op6t-nethunter-kernel)
 
 ## Kernel information
-- Version: V4
-- Kernel Version: 4.9.213
+- Version: V5
+- Kernel Version: 4.9.215-rc
 - Support ROM: Android 10(Oxygen OS and Hydrogen OS)
 - Toolchain: Clang11
 
