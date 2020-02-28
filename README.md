@@ -4,7 +4,7 @@
 Nethunter Kernel for Oneplus 6 and Oneplus 6T, [Source Code](https://github.com/acai66/op6-op6t-nethunter-kernel)
 
 ## Kernel information
-- Version: V5
+- Version: V6
 - Kernel Version: 4.9.215-rc
 - Support ROM: Android 10(Oxygen OS and Hydrogen OS)
 - Toolchain: Clang11
@@ -29,7 +29,7 @@ Nethunter Kernel for Oneplus 6 and Oneplus 6T, [Source Code](https://github.com/
 
 
 ### BUGS
-- You tell me.
+- HID gadget function needs to replug usb again at first time.
 
 
 ### TODO
@@ -39,6 +39,7 @@ Nethunter Kernel for Oneplus 6 and Oneplus 6T, [Source Code](https://github.com/
 
 
 ### Credits
+- [fasheng](https://github.com/fasheng) for HID patches
 - [simonpunk](https://forum.xda-developers.com/oneplus-5/development/burgerhunter-t3638810) for HID patches
 - [johanlike(DJY)](https://github.com/johanlike) for wifi patches
 - [Boos4721](https://github.com/Boos4721/op6_kernel) for kernel source 

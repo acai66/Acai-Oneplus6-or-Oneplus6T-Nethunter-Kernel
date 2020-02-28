@@ -4,7 +4,7 @@
 适用于一加6(T)的Nethunter内核，[源码](https://github.com/acai66/op6-op6t-nethunter-kernel)
 
 ## 内核信息
-- 版本: V5
+- 版本: V6
 - 内核版本: 4.9.215-rc
 - 支持系统: 氢安卓10，理论也支持氧10
 - 编译链: Clang11
@@ -30,8 +30,8 @@
 
 
 ### Bugs
-1. ~~开机会弹窗 "您的设备内部出现了问题",直接忽略就好~~(已修复)
-2. ~~息屏手势失效~~ (已修复)
+1. HID功能需要重插一次usb才行，只需要在开机后重插一次就可完美使用。
+
 
 ### TODO
 1. 测试各功能
@@ -48,11 +48,8 @@
     使用`modprobe`命令加载内核模块，例如加载rtl8812au模块，运行`modprobe 88XXau`。
     更多模块请参考`/system/lib/modules/`下有哪些ko文件。
 6. #### 如何进行HID测试？
-    参考[`USB ARMY`](https://forum.xda-developers.com/oneplus-5/development/burgerhunter-t3638810),例: 以root身份在终端运行
-    ```
-    setprop sys.usb.config win,hid
-    ```
-    即可开启hid的支持
+    hid功能已经能够始终开启了，不再需要运行特殊命令
+    参考 bugs
 7. #### 如何切换网卡到监听模式？
     在测试`rtl8812au`时，使用`airmon-ng start wlan1`打开监听模式总是有异常，经过搜索测试发现运行如下命令即可打开监听模式
     ```
@@ -64,6 +61,7 @@
     ![开启监听模式](resources/images/enable_monitor_mode.jpg)
 
 ### Credits
+- [fasheng](https://github.com/fasheng) for HID patches
 - [simonpunk](https://forum.xda-developers.com/oneplus-5/development/burgerhunter-t3638810) for HID patches
 - [johanlike(DJY)](https://github.com/johanlike) for wifi patches
 - [Boos4721](https://github.com/Boos4721/op6_kernel) for kernel source 
