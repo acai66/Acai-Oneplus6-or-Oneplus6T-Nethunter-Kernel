@@ -4,8 +4,8 @@
 适用于一加6(T)的Nethunter内核，[源码](https://github.com/acai66/op6-op6t-nethunter-kernel)
 
 ## 内核信息
-- 版本: V6
-- 内核版本: 4.9.215-rc
+- 版本: V10
+- 内核版本: 4.9.222
 - 支持系统: 氢安卓10，理论也支持氧10
 - 编译链: Clang11
 
@@ -30,7 +30,7 @@
 
 
 ### Bugs
-1. HID功能需要重插一次usb才行，只需要在开机后重插一次就可完美使用。
+1. 测试中...
 
 
 ### TODO
@@ -48,8 +48,24 @@
     使用`modprobe`命令加载内核模块，例如加载rtl8812au模块，运行`modprobe 88XXau`。
     更多模块请参考`/system/lib/modules/`下有哪些ko文件。
 6. #### 如何进行HID测试？
-    hid功能已经能够始终开启了，不再需要运行特殊命令
-    参考 bugs
+    参考USB ARMY： https://forum.xda-developers.com/oneplus-5/development/burgerhunter-t3638810
+    ```
+    setprop sys.usb.config reset
+    setprop sys.usb.config win,hid
+    setprop sys.usb.config win,mass_storage
+    setprop sys.usb.config win,rndis
+    setprop sys.usb.config win,hid,mass_storage
+    setprop sys.usb.config win,rndis,hid
+    setprop sys.usb.config win,rndis,mass_storage
+    setprop sys.usb.config win,rndis,hid,mass_storage
+    setprop sys.usb.config mac,hid
+    setprop sys.usb.config mac,mass_storage
+    setprop sys.usb.config mac,ecm
+    setprop sys.usb.config mac,hid,mass_storage
+    setprop sys.usb.config mac,ecm,hid
+    setprop sys.usb.config mac,ecm,mass_storage
+    setprop sys.usb.config mac,ecm,hid,mass_storage
+    ```
 7. #### 如何切换网卡到监听模式？
     在测试`rtl8812au`时，使用`airmon-ng start wlan1`打开监听模式总是有异常，经过搜索测试发现运行如下命令即可打开监听模式
     ```
