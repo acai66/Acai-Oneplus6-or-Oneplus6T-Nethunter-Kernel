@@ -4,7 +4,7 @@
 Nethunter Kernel for Oneplus 6 and Oneplus 6T, [Source Code](https://github.com/acai66/op6-op6t-nethunter-kernel)
 
 ## Kernel information
-- Version: V10
+- Version: V11
 - Kernel Version: 4.9.231
 - Support ROM: Android 10(Oxygen OS and Hydrogen OS)
 - Toolchain: Clang11

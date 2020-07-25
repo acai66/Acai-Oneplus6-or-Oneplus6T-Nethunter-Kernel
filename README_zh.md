@@ -4,7 +4,7 @@
 适用于一加6(T)的Nethunter内核，[源码](https://github.com/acai66/op6-op6t-nethunter-kernel)
 
 ## 内核信息
-- 版本: V10
+- 版本: V11
 - 内核版本: 4.9.231
 - 支持系统: 氢安卓10，理论也支持氧10
 - 编译链: Clang11
